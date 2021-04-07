@@ -219,7 +219,7 @@ class BuiltInFunction(BaseFunction):
     def execute_append(self, exec_ctx):
         """
         向list中添加元素
-        不是就地操作
+        非就地操作
         append([1,2,3], 4) => 返回结果：[1,2,3,4]，但原本的列表[1,2,3]并没有改变
         """
         list_ = exec_ctx.symbol_table.get('list')

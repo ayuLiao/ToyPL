@@ -3,11 +3,10 @@ from ast_node import *
 from result import ParserResult
 from error import InvalidSyntaxError
 
-####################
-# PARSER 解析器
-####################
 
 class Parser(object):
+    """Parser 解析器"""
+
     def __init__(self, tokens):
         self.tokens = tokens
         self.tok_idx = -1

@@ -1,8 +1,7 @@
-####################
-# CONTEXT 上下文
-####################
-
 class Context(object):
+    """
+    CONTEXT 上下文
+    """
     def __init__(self, display_name, parent=None, parent_entry_pos=None):
         """
 

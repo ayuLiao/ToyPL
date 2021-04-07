@@ -1,8 +1,6 @@
-####################
-# PARSER RESULT 解析结果
-####################
-
 class ParserResult(object):
+    """解析器结果类"""
+
     def __init__(self):
         self.error = None
         self.node = None
@@ -39,11 +37,9 @@ class ParserResult(object):
         return self
 
 
-####################
-# RUNTIME RESULT 运行时结果
-####################
-
 class RTResult(object):
+    """RunTime 运行时结果类"""
+    
     def __init__(self):
         self.reset()
 

@@ -63,11 +63,3 @@ func-expr   : KEYWORD func IDENTIFIER?
 *   0次或多次
 ?   0次或一次
 +   1次或多次
-
-expr 表达式
-comp-expr 比较表达式 compare
-arith-expr 运算表达式
-term 项
-factor 因子
-power 幂
-atom 原子

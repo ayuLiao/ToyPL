@@ -2,12 +2,10 @@ from position import Position
 from tokens import *
 from error import *
 
-
-####################
-# LEXER 词法分析
-####################
-
 class Lexer(object):
+    """
+    Lexer 词法分析
+    """
     def __init__(self, fn, text):
         self.fn = fn # text来源 => 某个文件，方便报错定位
         self.text = text
@@ -15,8 +13,8 @@ class Lexer(object):
         self.current_char = None # 当前字符
         self.advance() # self.pos从-1开始，然后立刻调用self.advance
 
-    # advance 预先的；先行的，获取下一个字符
     def advance(self):
+        """预读"""
         self.pos.advance(self.current_char)
         if self.pos.idx < len(self.text):
             self.current_char = self.text[self.pos.idx]

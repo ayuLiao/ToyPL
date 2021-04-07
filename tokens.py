@@ -1,8 +1,8 @@
 import string
 
-####################
-# CONSTANT 常量
-####################
+"""
+Constant 常量
+"""
 
 # DIGITS 数字
 DIGITS = '0123456789'
@@ -11,9 +11,9 @@ LETTERS = string.ascii_letters # A~Z + a~z
 LETTERS_DIGITS = LETTERS + DIGITS
 
 
-####################
-# TOKENS
-####################
+"""
+Tokens
+"""
 
 # Token type => TT
 TT_INT = "INT"
